@@ -2,6 +2,6 @@
 
 This is the official website of Isaac Kaawoan.
 
-Here is the link to view the site: iwilliamk.github.io
+Here is the link to view the site: https://iwilliamk.github.io/
 
 Credits to https://github.com/Rahul-Khawse 
