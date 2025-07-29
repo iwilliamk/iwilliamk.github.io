@@ -108,6 +108,35 @@ body{
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
 }
+
+/* Home Social Media Buttons */
+.home-social{
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.home-social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.home-social a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
 .btn{
     display: inline-block;
     padding: 12px 28px;
@@ -252,9 +281,19 @@ section{
 }
 .container1{
     width: 600px;
-    height: 500px;
+    height: auto;
     padding: 75px 90px;
     margin-left: 120px;
+}
+
+/* Technical Skills Container - Full Width */
+.container1:first-of-type{
+    width: 100%;
+    max-width: 100%;
+    padding: 75px 50px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
 }
 .heading1{
     text-align: center;
@@ -349,6 +388,110 @@ section{
 }
 .progress-line.react span::after{
     content: "90%";
+}
+
+/* New Technical Skills Styles */
+.technical-skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover{
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #0ef;
+    box-shadow: 0 10px 25px rgba(14, 255, 255, 0.2);
+}
+
+.skill-item span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.skill-item i{
+    font-size: 50px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.skill-item:hover i{
+    transform: scale(1.1);
+}
+
+.skill-item p{
+    color: #ccc;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Professional Skills Styles */
+.professional-skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+
+.skill-category{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover{
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #0ef;
+    box-shadow: 0 10px 25px rgba(14, 255, 255, 0.2);
+}
+
+.skill-category h3{
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-category h3 i{
+    font-size: 24px;
+}
+
+.skill-category p{
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
 }
 .progress-line span::after{
     content: "";
